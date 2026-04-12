@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teams-brand: #4B53BC;
+  --color-teams-bg: #F5F5F5;
+  --color-teams-sidebar: #2D2C2C;
+  --color-teams-header: #FFFFFF;
+  --color-teams-border: #EDEBE9;
+  --color-teams-text: #242424;
+  --color-teams-text-secondary: #616161;
+}
+
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-teams-bg);
+  color: var(--color-teams-text);
+}
+
+body {
+  margin: 0;
+  background: var(--color-teams-bg);
+  color: var(--color-teams-text);
+}
+
+.teams-card {
+  background: #FFFFFF;
+  border: 1px solid var(--color-teams-border);
+  border-radius: 4px;
+  box-shadow: 0 1.6px 3.6px 0 rgba(0,0,0,.132), 0 .3px .9px 0 rgba(0,0,0,.108);
+  transition: all 0.2s ease;
+}
+
+.teams-card:hover {
+  background: #FAF9F8;
+  box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132), 0 .6px 1.8px 0 rgba(0,0,0,.108);
+}
+
+.teams-button-primary {
+  background-color: var(--color-teams-brand);
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  padding: 6px 16px;
+  transition: opacity 0.2s;
+}
+
+.teams-button-primary:hover {
+  opacity: 0.9;
+}
+
+.teams-sidebar-active {
+  color: var(--color-teams-brand) !important;
+  border-left: 2px solid var(--color-teams-brand);
+  background: rgba(75, 83, 188, 0.05);
+}
+
+/* Hiring Ad specific */
+.hiring-ad-blue {
+  background: linear-gradient(135deg, #0078D4 0%, #005A9E 100%);
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 120, 212, 0.2);
+}
